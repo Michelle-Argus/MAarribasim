@@ -1,0 +1,11 @@
+<Addin id="OpenSim.ApplicationPlugins.RemoteAdmin" version="0.1">
+    <Runtime>
+        <Import assembly="OpenSim.ApplicationPlugins.RemoteAdmin.dll"/>
+    </Runtime>
+    <Dependencies>
+        <Addin id="OpenSim" version="0.5" />
+    </Dependencies>
+    <Extension path = "/OpenSim/Startup">
+        <Plugin id="RemoteController" type="OpenSim.ApplicationPlugins.RemoteAdmin.RemoteAdminPlugin" />
+    </Extension>
+</Addin>
