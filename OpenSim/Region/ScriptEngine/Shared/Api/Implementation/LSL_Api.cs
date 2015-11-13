@@ -6854,6 +6854,26 @@ namespace OpenSim.Region.ScriptEngine.Shared.Api
                 byte[] bucket = new byte[] { (byte)AssetType.Folder };
 
                 Vector3 pos = m_host.AbsolutePosition;
+                
+                m_log.Error("[LSL_API]: Testnachricht " +
+                
+                
+					World.ToString() + " -- " +
+                        m_host.OwnerID.ToString() + " -- " +
+                         m_host.Name.ToString() + " -- " +
+                          destID.ToString() + " -- " +
+                          
+                        
+                        " false --  " +
+                         string.Format("'{0}'", category) + "  --  " +
+                        folderID.ToString() + " -- " +
+                         + " false --  " +
+                          pos.ToString() + " -- " +
+                        bucket.ToString() + " -- " +
+                        
+                         + " false --  "  );
+                
+                
 
                 GridInstantMessage msg = new GridInstantMessage(World,
                         m_host.OwnerID, m_host.Name, destID,
